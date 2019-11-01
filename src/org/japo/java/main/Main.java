@@ -31,18 +31,13 @@ public class Main {
     public static void main(String[] args) {
 
         //variables & Constantes
-        final int MAX = 4;
-        final int MIN = 0;
         boolean error;
         double numero;
-
-        //Estado inicial
-        numero = MIN;
 
         //Inicio bucle
         do {
             try {
-                System.out.print("Insert double valor ");
+                System.out.print("Insert double valor...: ");
                 numero = SCN.nextDouble();
                 System.out.printf(Locale.ENGLISH, "%.2f%n", numero);
                 SCN.nextLine();
