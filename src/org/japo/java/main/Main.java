@@ -40,13 +40,14 @@ public class Main {
                 System.out.print("Insert double valor...: ");
                 numero = SCN.nextDouble();
                 System.out.printf(Locale.ENGLISH, "%.2f%n", numero);
-                SCN.nextLine();
+
                 error = false;
             } catch (Exception e) {
                 error = true;
                 System.out.println("Not double valor");
+            } finally {
+                //Limpiar buffer
                 SCN.nextLine();
-
             }
         } while (error == true);
         System.out.println("END");
